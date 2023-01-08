@@ -1,4 +1,5 @@
 // Questions Source: https://leetcode/all/problems.html
+//Online Editor/CodeShare: https://www.jdoodle.com/execute-nodejs-online/
 
 // 1. Two Sum
 // Given an array of integers, return indices of the two numbers such that they add up to a specific target.
@@ -27,3 +28,5 @@ function TwoSums(numbers, target) {
   return output;
 }
 console.log(TwoSums([2, 7, 11, 15], 9));
+
+// Two sums Ends
