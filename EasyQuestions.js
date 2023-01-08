@@ -24,6 +24,6 @@ function TwoSums(numbers, target) {
       }
     }
   }
-  returnoutput;
+  return output;
 }
-TwoSums([2, 7, 11, 15], 9);
+console.log(TwoSums([2, 7, 11, 15], 9));
