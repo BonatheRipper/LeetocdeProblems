@@ -1,5 +1,6 @@
 // Questions Source: https://leetcode/all/problems.html
 //Online Editor/CodeShare: https://www.jdoodle.com/execute-nodejs-online/
+//Start from Nairaland: https://www.nairaland.com/7491817/algorithm-data-structure-study-section/3#119851677
 
 // 1. Two Sum
 // Given an array of integers, return indices of the two numbers such that they add up to a specific target.
@@ -21,7 +22,7 @@ function TwoSums(numbers, target) {
       if (numbers[i] + numbers[j] === target && checkingVal !== target) {
         checkingVal = target;
 
-        output.push(numbers[i], numbers[j]);
+        output.push(i, j);
       }
     }
   }
@@ -30,3 +31,25 @@ function TwoSums(numbers, target) {
 console.log(TwoSums([2, 7, 11, 15], 9));
 
 // Two sums Ends
+
+// 2. Palindrome Number
+// Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
+
+// Example 1:
+
+// Input: 121
+// Output: true
+
+function isPalindrome(input) {
+  var str = "";
+  var inputCopy = input + "";
+  for (var i = 0; i < inputCopy.length; i++) {
+    str = inputCopy.charAt(i) + str;
+  }
+  if (Number(str) === Number(input)) {
+    return true;
+  }
+  return false;
+}
+console.log(isPalindrome(-121));
+// Palindrome Number ends
